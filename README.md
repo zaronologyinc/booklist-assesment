@@ -1,7 +1,15 @@
-## Zaronology Booklist Assesment
+# Usage
 
-- Booklist Project - containing Books matched with Authors and Genres
-- Eloquent relationships
-- database migration files
-- database seeder files
-- 1 route endpoint to index display list of books (simple bootstrap HTML CSS)
+Run the following to set up the local development environment.
+```bash
+git clone https://github.com/zaronologyinc/booklist-assesment;
+cd booklist-assesment;
+php artisan key:generate;
+composer install;
+npm install;
+php artisan migrate;
+php artisan db:seed;
+composer dump-autoload -o;
+php artisan serve;
+npm run watch;
+```
